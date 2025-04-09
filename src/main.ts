@@ -23,8 +23,6 @@ async function bootstrap() {
 
   const corsOptions = getCorsOptions(corsConfiguration);
 
-  logger.log('AAAAA');
-
   if (corsOptions) {
     app.enableCors(corsOptions);
     logger.log('CORS enabled.');

@@ -1,5 +1,5 @@
-import { Injectable, Scope, Inject } from '@nestjs/common';
-import { Logger, PARAMS_PROVIDER_TOKEN, PinoLogger } from 'nestjs-pino';
+import { Injectable, Scope } from '@nestjs/common';
+import { PinoLogger } from 'nestjs-pino';
 
 @Injectable({ scope: Scope.TRANSIENT })
 export class LoggerService {
